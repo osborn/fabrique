@@ -4,12 +4,14 @@
  * Copyright 2013 Ensembly
  *
  */
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
 body{
     font-family: 'Open Sans', sans-serif !important;
 }
- .pad-top{
-    padding-top: 10px;
- }
+.pad-top{
+	padding-top: 10px
+}
+
+.item-price{
+	font-size: 6em;
+	text-align: center;
+}
