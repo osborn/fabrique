@@ -21,6 +21,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slider.css">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -104,7 +105,11 @@
             <a href="#" class="list-group-item active">
               Price
             </a>
-            <a href="#" class="list-group-item">We will put a slider here</a>
+            <br>
+            <!-- <a href="#" class="list-group-item">We will put a slider here</a> -->
+                  &nbsp;&nbsp;<input type="range" id="price" class="col-md-8" value="" data-slider-min="10" data-slider-max="500" data-slider-step="1" data-slider-value="-14" data-slider-orientation="horizontal" data-slider-selection="after"data-slider-tooltip="hide">
+            <hr>
+            <input class="form-control" type="text" id="quote" placeholder="Your budget">
           </div>
         </div>
         <div class="col-lg-10">
@@ -195,5 +200,12 @@
     <script src="js/jquery-1.9.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/holder.js"></script>
+    <script src="js/slider.js"></script>
+    <script>
+    $('#price').slider()
+        .on('slide', function(ev){
+           $('#quote').val(ev.value);
+        });
+    </script>
   </body>
 </html>
