@@ -22,6 +22,12 @@ body{
 	width: 100%;
 }
 
-.border{
-	border: 1px solid;
+
+.logo{
+	height: 50px;
+	margin-top: -15px
+}
+.logo.dash{
+	height: 25px;
+	margin-top: -3px;
 }
