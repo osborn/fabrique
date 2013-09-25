@@ -35,3 +35,12 @@ body{
 .suggested > img{
 	height: 150px;
 }
+
+.shops {
+	height: 100px;
+	width: auto;
+}
+
+#middle {
+	margin-left: 150px;
+}
