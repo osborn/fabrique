@@ -14,12 +14,12 @@ body{
 .item-price{
 	font-size: 6em;
 	text-align: center;
-	font-family: arial;
+	font-family: arial
 }
 
 #item-img {
 	height: 50%;
-	width: 100%;
+	width: 100%
 }
 
 
@@ -29,18 +29,25 @@ body{
 }
 .logo.dash{
 	height: 25px;
-	margin-top: -3px;
+	margin-top: -3px
+}
+
+.biz-logo{
+	background: none
 }
 
 .suggested > img{
-	height: 150px;
+	height: 150px
 }
 
 .shops {
 	height: 100px;
-	width: auto;
+	width: auto
 }
 
 #middle {
-	margin-left: 150px;
+	margin-left: 150px
+}
+.center{
+	text-align: center
 }
