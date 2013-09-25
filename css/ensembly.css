@@ -14,4 +14,14 @@ body{
 .item-price{
 	font-size: 6em;
 	text-align: center;
+	font-family: arial;
+}
+
+#item-img {
+	height: 50%;
+	width: 100%;
+}
+
+.border{
+	border: 1px solid;
 }
