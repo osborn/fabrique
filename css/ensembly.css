@@ -31,3 +31,7 @@ body{
 	height: 25px;
 	margin-top: -3px;
 }
+
+.suggested > img{
+	height: 150px;
+}

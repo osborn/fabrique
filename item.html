@@ -37,7 +37,7 @@
                             <li><a href="#">Shoes</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Women<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Shirts</a></li>
@@ -79,30 +79,54 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Women</a></li>
                 <li><a href="products.html">Dress</a></li>
-                <li class="active">Flower Dress</li>
+                <li class="active" id="active">Flower Dress</li>
             </ol>
         </div>
 
-        <div class="container border">
-            <div class="row">
-                <div class="col-lg-4">
+        
+            <div class="container inner">
+                <div class="row">
+                <div class="col-lg-4" id="image">
                     <img id="item-img" src="images/thumb1.jpg">
                 </div>
                 <div class="col-lg-4">
-                    Other images will go here.
+                    <p><b>Suggested Products</b></p>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <a href="#" class="thumbnail suggested" id="thumb9">
+                          <img src="images/thumb9.jpg">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <a href="#" class="thumbnail suggested" id="thumb10">
+                          <img src="images/thumb10.jpg">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <a href="#" class="thumbnail suggested" id="thumb11">
+                          <img src="images/thumb11.jpg">
+                        </a>
+                      </div>
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="item-price">GHC35</div>
-                    <button class="btn btn-success checkout"><b>Checkout</b></button>
+                    <button class="btn btn-success checkout"><b>Add to Cart</b></button>
                     <br><br>
                     <ul class="nav nav-tabs">
                         <li class="active"><a href="#">Item Details</a></li>
                         <li><a href="#">Ratings</a></li>
                         <li><a href="#">Shipping and policies</a></li>
                     </ul>
-                    <div class="container">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+                    <div class="container">Flower Dress is designed by Afrochic which has a collection of very beautiful and authentic African clothes. Afrochic takes full responsibility for the delivery and use of the product.</div>
                 </div>
+            
             </div>
+            
         </div>
 
 
@@ -123,5 +147,17 @@
     <script src="js/jquery-1.9.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/holder.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var img = $('.suggested');
+            img.click(function(){
+                console.log(img.attr('id'));
+                $("#image").html("<img src='images/"+img.attr('id')+".jpg' >");
+                $('.item-price').html('GHC20');
+                $('#active').html('Summer Bag');
+            })
+        });
+    </script>
 </body>
 </html>
