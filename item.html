@@ -68,6 +68,7 @@
                     <li>
                         <a href="#">
                             <span class="glyphicon glyphicon-shopping-cart"></span>
+                            <span class="badge">0</span>
                         </a>
                     </li>
                 </ul>
@@ -115,7 +116,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="item-price">GHC35</div>
-                    <a data-toggle="modal" href="#myModal" class="btn btn-success checkout"><b>Add to Cart</b></a>
+                    <a data-toggle="modal" href="#myModal" class="btn btn-success checkout" id="add-to-cart"><b>Add to Cart</b></a>
                     
                     <br><br>
                     <ul class="nav nav-tabs">
@@ -184,7 +185,13 @@
                 $("#image").html("<img src='images/"+img.attr('id')+".jpg' >");
                 $('.item-price').html('GHC20');
                 $('#active').html('Summer Bag');
-            })
+                $('#thumb10').html("<img src='images/thumb1.jpg' id='thumb1'>");
+            });
+
+            $('#add-to-cart').click(function(){
+                $('.badge').html('1');
+                $('.badge').css('background-color', 'red');
+            });
         });
     </script>
 </body>
