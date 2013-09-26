@@ -5,7 +5,9 @@
  *
  */
 body{
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('../images/afw.png') !important;
+    background-repeat: repeat
 }
 .pad-top{
 	padding-top: 10px
