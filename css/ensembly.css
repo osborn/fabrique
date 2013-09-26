@@ -53,6 +53,11 @@ img.logo:hover{
 }
 
 #middle {
+	margin-left: 150px;
+}
+
+.marketing h2{
+	font-family:arial;
 	margin-left: 150px
 }
 .center{
