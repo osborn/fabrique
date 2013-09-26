@@ -27,8 +27,13 @@ body{
 
 .logo{
 	height: 50px;
-	margin-top: -15px
+	margin-top: -15px;
 }
+img.logo:hover{
+	text-decoration: none;
+	background-color: none
+}
+
 .logo.dash{
 	height: 25px;
 	margin-top: -3px
