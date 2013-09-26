@@ -25,7 +25,7 @@
 </head>
 <!-- NAVBAR
     ================================================== -->
-    <body>
+    <body class="bg">
         <div class="navbar-wrapper">
             <div class="container" >
                 <ul class="nav nav-pills" id="nav">
@@ -117,8 +117,11 @@
                 <div class="col-lg-4">
                     <div class="item-price">GHC35</div>
                     <a data-toggle="modal" href="#" class="btn btn-success checkout" id="add-to-cart"><b>Add to Cart</b></a>
-                    
-                    <br><br>
+                    <br>
+                    <br>
+                    <a data-toggle="modal" href="#myModal" class="btn btn-primary checkout" id="add-to-cart"><b>Checkout</b></a>
+                    <br>
+                    <br>
                     <ul class="nav nav-tabs">
                         <li class="active"><a href="#">Item Details</a></li>
                         <li><a href="#">Ratings</a></li>
@@ -146,22 +149,21 @@
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  <h4 class="modal-title">Select your size</h4>
-                </div>
+                
                 <div class="modal-body">
-                  <div class="row">
-        
-                      <div class="col-lg-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <input type="radio">
-                          </span>
-                          <input type="text" class="form-control">
-                        </div><!-- /input-group -->
-                      </div><!-- /.col-lg-6 -->
-                    </div><!-- /.row -->
+                  <div class="container">
+
+                      <form class="form-signin">
+                        <h2 class="form-signin-heading">Please sign in</h2>
+                        <input type="text" class="form-control" placeholder="Email address" autofocus>
+                        <input type="password" class="form-control" placeholder="Password">
+                        <label class="checkbox">
+                          <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                      </form>
+
+    </div> <!-- /container -->
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
