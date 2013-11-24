@@ -161,21 +161,28 @@
                         <div class="modal-body">
                             <div class="container">
 
-                                <form class="form-signin">
-                                    <h2 class="form-signin-heading">Please sign in</h2>
-                                    <input type="text" class="form-control" placeholder="Email address" autofocus><br>
-                                    <input type="password" class="form-control" placeholder="Password">
-                                    <label class="checkbox">
-                                        <input type="checkbox" value="remember-me"> Remember me
-                                    </label>
-                                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                                <form class="form-signin" action="redirect_checkout.php">
+                                    <h2 class="form-signin-heading">Your Billing Address</h2>
+                                    <input type="text" class="form-control" placeholder="Full Name"><br>
+                                    <select class="form-control">
+                                        <option value="volvo">City</option>
+                                        <option value="volvo">Kumasi</option>
+                                        <option value="volvo">Tamale</option>
+                                        <option value="volvo">Koforidua</option>
+                                        <option value="volvo">Accra</option>
+                                    </select>
+                                    <br>
+                                    <input type="text" class="form-control" placeholder="Neighbourhood" autofocus><br>
+                                    <input type="text" class="form-control" placeholder="House Number or close Landmark" autofocus><br>
+                                    <input type="text" class="form-control" placeholder="Telephone number">
+                                    <br>
+                                    <button class="btn btn-lg btn-primary btn-block" type="submit">Pay with Mpower</button>
                                 </form>
 
                             </div> <!-- /container -->
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
