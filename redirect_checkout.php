@@ -4,9 +4,9 @@
 	
 	$co = new MPower_Checkout_Invoice();
 
-	$co->addItem('Fathia fata Nkrumah', 1, 50, 50);
+	$co->addItem('GTP Wax Print', 1, 35, 35);
 
-	$co->setTotalAmount(50);
+	$co->setTotalAmount(35);
 
 	
 

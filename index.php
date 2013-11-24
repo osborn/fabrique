@@ -11,7 +11,7 @@
     <title>Fabrique</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="stylesheets/css/bootstrap.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -20,10 +20,10 @@
 <![endif]-->
 
 <!-- Custom styles for this template -->
-<link rel="stylesheet" href="css/carousel.css">
-<link rel="stylesheet" href="css/slider.css">
+<link rel="stylesheet" href="stylesheets/css/carousel.css">
+<link rel="stylesheet" href="stylesheets/css/slider.css">
 <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Open+Sans'>
-<link rel="stylesheet" href="css/ensembly.css">
+<link rel="stylesheet" href="stylesheets/css/ensembly.css">
 </head>
 <!-- NAVBAR
     ================================================== -->
@@ -35,15 +35,18 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Brands<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="products.html">ATL</a></li>
-                            <li><a href="products.html">GTP</a></li>
+                            <li><a href="/products">ATL</a></li>
+                            <li><a href="/products">GTP</a></li>
+                            <li><a href="/products">Woodin</a></li>
+                            <li><a href="/products">Printex</a></li>
+
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Type<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="products.html">Wax</a></li>
-                            <li><a href="products.html">Linen</a></li>
+                            <li><a href="/products">Wax</a></li>
+                            <li><a href="/products">Linen</a></li>
                             
                         </ul>
                     </li>
@@ -52,10 +55,10 @@
                         <ul class="dropdown-menu">
                             <li><a href="#">Funeral</a></li>
                             <li><a href="#">Engagement</a></li>
-                            <li><a href="products.html">Work</a></li>
+                            <li><a href="/products">Work</a></li>
                         </ul>
                     </li>
-                    <li><a href="products.html">Gallery</a></li>
+                    <li><a href="products.php">Gallery</a></li>
                 </ul> 
                 <ul class="nav nav-pills" id="nav2">
                     <li>
@@ -93,11 +96,11 @@
         </ol>
         <div class="carousel-inner">
             <div class="item active">
-                <img class="carousel" src="images/fabric3.jpeg" alt="First slide">
+                <img class="carousel" src="stylesheets/images/front.jpg" alt="First slide">
                 <div class="container">
                     <div class="carousel-caption">
-                        <p class="caption">The best collection of 100% authentic African designer products.</p>
-                        <p><a class="btn btn-lg btn-default button btns" href="products.html"><b>GALLERY</b></a></p>
+                        <p class="caption">The best collection of 100% authentic African designer prints.</p>
+                        <p><a class="btn btn-lg btn-default button btns" href="products.php"><b>GALLERY</b></a></p>
                     </div>
                 </div>
             </div>
@@ -136,14 +139,14 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-lg-4">
-                <img src="images/Woodin.jpg" class="shops">
+                <img src="stylesheets/images/Woodin.jpg" class="shops">
                 
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <img src="images/atl.jpeg" class="shops" id="middle">
+                <img src="stylesheets/images/atl.jpeg" class="shops" id="middle">
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <img src="images/gtp.jpg" class="shops">
+                <img src="stylesheets/images/gtp.jpg" class="shops">
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
@@ -163,9 +166,9 @@
 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.9.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/holder.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="stylesheets/js/jquery-1.9.0.min.js"></script>
+    <script src="stylesheets/js/bootstrap.min.js"></script>
+    <script src="stylesheets/js/holder.js"></script>
+    <script src="stylesheets/js/slider.js"></script>
 </body>
 </html>

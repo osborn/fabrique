@@ -11,7 +11,7 @@
     <title>Fabrique</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="stylesheets/css/bootstrap.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -20,8 +20,8 @@
         <![endif]-->
 
         <!-- Custom styles for this template -->
-        <link href="css/carousel.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/ensembly.css">
+        <link href="stylesheets/css/carousel.css" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheets/css/ensembly.css">
     </head>
         <!-- NAVBAR
         ================================================== -->
@@ -33,15 +33,15 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Brands<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="products.html">ATL</a></li>
-                            <li><a href="products.html">GTP</a></li>
+                            <li><a href="/products">ATL</a></li>
+                            <li><a href="/products">GTP</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Type<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="products.html">Wax</a></li>
-                            <li><a href="products.html">Linen</a></li>
+                            <li><a href="/products">Wax</a></li>
+                            <li><a href="/products">Linen</a></li>
                             
                         </ul>
                     </li>
@@ -50,10 +50,10 @@
                         <ul class="dropdown-menu">
                             <li><a href="#">Funeral</a></li>
                             <li><a href="#">Engagement</a></li>
-                            <li><a href="products.html">Work</a></li>
+                            <li><a href="/products">Work</a></li>
                         </ul>
                     </li>
-                    <li class="active"><a href="products.html">Gallery</a></li>
+                    <li class="active"><a href="/products">Gallery</a></li>
                 </ul> 
                 <ul class="nav nav-pills" id="nav2">
                     <li>
@@ -80,8 +80,8 @@
         </div>
             <div class="container" id="breadcrumb">
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Gallery</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products">Gallery</a></li>
                     <li class="active" id="active">GTP</li>
                 </ol>
             </div>
@@ -90,28 +90,28 @@
             <div class="container inner">
                 <div class="row">
                     <div class="col-lg-4" id="image">
-                        <img id="item-img" src="images/vlisco3.jpg">
+                        <img id="item-img" src="stylesheets/images/vlisco3.jpg">
                     </div>
                     <div class="col-lg-4">
                         <p><b>Matching Fabrics</b></p>
                         <div class="row">
                             <div class="col-lg-6">
                                 <a href="#" class="thumbnail suggested" id="thumb9">
-                                    <img src="images/thumb9.jpg">
+                                    <img src="stylesheets/images/vlis.jpg">
                                 </a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
                                 <a href="#" class="thumbnail suggested" id="thumb10">
-                                    <img src="images/thumb10.jpg">
+                                    <img src="stylesheets/images/vili.jpg">
                                 </a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
                                 <a href="#" class="thumbnail suggested" id="thumb11">
-                                    <img src="images/thumb11.jpg">
+                                    <img src="stylesheets/images/vlisco1.jpg">
                                 </a>
                             </div>
                         </div>
@@ -192,9 +192,9 @@
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="js/jquery-1.9.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/holder.js"></script>
+        <script src="stylesheets/js/jquery-1.9.0.min.js"></script>
+        <script src="stylesheets/js/bootstrap.min.js"></script>
+        <script src="stylesheets/js/holder.js"></script>
 
 
         <script type="text/javascript">var switchTo5x=true;</script>
@@ -204,11 +204,10 @@
             $(document).ready(function(){
                 var img = $('.suggested');
                 img.click(function(){
-                    console.log(img.attr('id'));
-                    $("#image").html("<img src='images/"+img.attr('id')+".jpg' >");
+                    $("#image").html("<img src='images/vli.jpg' >");
                     $('.item-price').html('GHC20');
-                    $('#active').html('Summer Bag');
-                    $('#thumb10').html("<img src='images/thumb1.jpg' id='thumb1'>");
+                    $('#active').html('ATL');
+                    $('#thumb10').html("<img src='images/vli.jpg' id='thumb1'>");
                 });
 
                 $('#add-to-cart').click(function(){
